@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/trungkhiem/Documents/wsCpp/cpp_2_chatserver/chat_client.cpp" "CMakeFiles/ChatClient.dir/chat_client.cpp.o" "gcc" "CMakeFiles/ChatClient.dir/chat_client.cpp.o.d"
+  "/Users/trungkhiem/Documents/wsCpp/C-Terminal-Chat-App/chat_client.cpp" "CMakeFiles/ChatClient.dir/chat_client.cpp.o" "gcc" "CMakeFiles/ChatClient.dir/chat_client.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

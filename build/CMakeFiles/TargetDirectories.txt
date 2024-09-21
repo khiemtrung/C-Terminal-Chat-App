@@ -1,4 +1,4 @@
-/Users/trungkhiem/Documents/wsCpp/cpp_2_chatserver/build/CMakeFiles/ChatServer.dir
-/Users/trungkhiem/Documents/wsCpp/cpp_2_chatserver/build/CMakeFiles/ChatClient.dir
-/Users/trungkhiem/Documents/wsCpp/cpp_2_chatserver/build/CMakeFiles/edit_cache.dir
-/Users/trungkhiem/Documents/wsCpp/cpp_2_chatserver/build/CMakeFiles/rebuild_cache.dir
+/Users/trungkhiem/Documents/wsCpp/C-Terminal-Chat-App/build/CMakeFiles/ChatServer.dir
+/Users/trungkhiem/Documents/wsCpp/C-Terminal-Chat-App/build/CMakeFiles/ChatClient.dir
+/Users/trungkhiem/Documents/wsCpp/C-Terminal-Chat-App/build/CMakeFiles/edit_cache.dir
+/Users/trungkhiem/Documents/wsCpp/C-Terminal-Chat-App/build/CMakeFiles/rebuild_cache.dir

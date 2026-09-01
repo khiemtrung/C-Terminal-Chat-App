@@ -1,31 +1,34 @@
 #include <iostream>
 #include <string>
 #include <thread>
-#ifdef _WIN32
-    #include <winsock2.h>
-    #include <ws2tcpip.h>
-    #pragma comment(lib, "ws2_32.lib")
-#else
-    #include <unistd.h>
-    #include <arpa/inet.h>
-    #include <sys/socket.h>
+#include <vector>
+
+#include "protocol.hpp"
+
+#ifndef _WIN32
     #include <netinet/in.h>
-    #define SOCKET int
-    #define INVALID_SOCKET -1
-    #define SOCKET_ERROR -1
-    #define closesocket close
 #endif
 
 void receive_messages(SOCKET sock) {
-    char buffer[1024] = {0};
+    char buffer[4096];
+    std::vector<std::uint8_t> pending;
     while (true) {
-        int bytes_received = recv(sock, buffer, 1024, 0);
+        const int bytes_received = recv(sock, buffer, sizeof(buffer), 0);
         if (bytes_received <= 0) {
             std::cout << "Disconnected from server." << std::endl;
             break;
         }
-        std::cout << buffer << std::endl;
-        memset(buffer, 0, sizeof(buffer));
+
+        pending.insert(pending.end(), buffer, buffer + bytes_received);
+        std::vector<std::string> frames;
+        if (!extract_frames(pending, frames)) {
+            std::cerr << "Server sent an invalid frame." << std::endl;
+            break;
+        }
+
+        for (const std::string& message : frames) {
+            std::cout << message << std::endl;
+        }
     }
 }
 
@@ -57,6 +60,16 @@ int main() {
 
     std::cout << "Connected to server. Start chatting!" << std::endl;
 
+    std::string username;
+    std::cout << "Enter your username: ";
+    std::getline(std::cin, username);
+    if (!send_frame(sock, username)) {
+        std::cerr << "Failed to send username." << std::endl;
+        closesocket(sock);
+        return 1;
+    }
+    std::cout << "Use /join <room> to switch rooms. Type 'exit' to quit." << std::endl;
+
     std::thread receive_thread(receive_messages, sock);
 
     std::string message;
@@ -65,9 +78,13 @@ int main() {
         if (message == "exit") {
             break;
         }
-        send(sock, message.c_str(), message.length(), 0);
+        if (!send_frame(sock, message)) {
+            std::cerr << "Failed to send message." << std::endl;
+            break;
+        }
     }
 
+    shutdown(sock, SHUT_RDWR);
     closesocket(sock);
     receive_thread.join();
 

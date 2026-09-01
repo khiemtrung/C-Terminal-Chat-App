@@ -1,0 +1,19 @@
+Start testing: Sep 01 15:42 +07
+----------------------------------------------------------
+1/1 Testing: ProtocolTests
+1/1 Test: ProtocolTests
+Command: "/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/ProtocolTests"
+Directory: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build
+"ProtocolTests" start time: Sep 01 15:42 +07
+Output:
+----------------------------------------------------------
+Protocol tests passed.
+<end of output>
+Test time =   0.70 sec
+----------------------------------------------------------
+Test Passed.
+"ProtocolTests" end time: Sep 01 15:42 +07
+"ProtocolTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 01 15:42 +07

@@ -1,2 +1,3 @@
-ProtocolTests 3 0.233696
+ProtocolTests 12 0.000518441
+DatabaseTests 11 0.00132619
 ---

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Library/Frameworks/Mono.framework/Headers
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

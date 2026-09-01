@@ -529,6 +529,19 @@ ProtocolTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/build
 .PHONY : ProtocolTests/fast
 
+#=============================================================================
+# Target rules for targets named DatabaseTests
+
+# Build rule for target.
+DatabaseTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DatabaseTests
+.PHONY : DatabaseTests
+
+# fast build rule for target.
+DatabaseTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/build
+.PHONY : DatabaseTests/fast
+
 chat_client.o: chat_client.cpp.o
 .PHONY : chat_client.o
 
@@ -552,6 +565,33 @@ chat_client.s: chat_client.cpp.s
 chat_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatClient.dir/build.make CMakeFiles/ChatClient.dir/chat_client.cpp.s
 .PHONY : chat_client.cpp.s
+
+chat_db.o: chat_db.cpp.o
+.PHONY : chat_db.o
+
+# target to build an object file
+chat_db.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/chat_db.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/chat_db.cpp.o
+.PHONY : chat_db.cpp.o
+
+chat_db.i: chat_db.cpp.i
+.PHONY : chat_db.i
+
+# target to preprocess a source file
+chat_db.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/chat_db.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/chat_db.cpp.i
+.PHONY : chat_db.cpp.i
+
+chat_db.s: chat_db.cpp.s
+.PHONY : chat_db.s
+
+# target to generate assembly for a file
+chat_db.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/chat_db.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/chat_db.cpp.s
+.PHONY : chat_db.cpp.s
 
 chat_server.o: chat_server.cpp.o
 .PHONY : chat_server.o
@@ -585,6 +625,7 @@ protocol.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/protocol.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatClient.dir/build.make CMakeFiles/ChatClient.dir/protocol.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/protocol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/protocol.cpp.o
 .PHONY : protocol.cpp.o
 
 protocol.i: protocol.cpp.i
@@ -595,6 +636,7 @@ protocol.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/protocol.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatClient.dir/build.make CMakeFiles/ChatClient.dir/protocol.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/protocol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/protocol.cpp.i
 .PHONY : protocol.cpp.i
 
 protocol.s: protocol.cpp.s
@@ -605,7 +647,62 @@ protocol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/protocol.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatClient.dir/build.make CMakeFiles/ChatClient.dir/protocol.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/protocol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/protocol.cpp.s
 .PHONY : protocol.cpp.s
+
+sha256.o: sha256.cpp.o
+.PHONY : sha256.o
+
+# target to build an object file
+sha256.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/sha256.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/sha256.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/sha256.cpp.o
+.PHONY : sha256.cpp.o
+
+sha256.i: sha256.cpp.i
+.PHONY : sha256.i
+
+# target to preprocess a source file
+sha256.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/sha256.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/sha256.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/sha256.cpp.i
+.PHONY : sha256.cpp.i
+
+sha256.s: sha256.cpp.s
+.PHONY : sha256.s
+
+# target to generate assembly for a file
+sha256.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatServer.dir/build.make CMakeFiles/ChatServer.dir/sha256.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProtocolTests.dir/build.make CMakeFiles/ProtocolTests.dir/sha256.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/sha256.cpp.s
+.PHONY : sha256.cpp.s
+
+tests/database_tests.o: tests/database_tests.cpp.o
+.PHONY : tests/database_tests.o
+
+# target to build an object file
+tests/database_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/tests/database_tests.cpp.o
+.PHONY : tests/database_tests.cpp.o
+
+tests/database_tests.i: tests/database_tests.cpp.i
+.PHONY : tests/database_tests.i
+
+# target to preprocess a source file
+tests/database_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/tests/database_tests.cpp.i
+.PHONY : tests/database_tests.cpp.i
+
+tests/database_tests.s: tests/database_tests.cpp.s
+.PHONY : tests/database_tests.s
+
+# target to generate assembly for a file
+tests/database_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DatabaseTests.dir/build.make CMakeFiles/DatabaseTests.dir/tests/database_tests.cpp.s
+.PHONY : tests/database_tests.cpp.s
 
 tests/protocol_tests.o: tests/protocol_tests.cpp.o
 .PHONY : tests/protocol_tests.o
@@ -670,16 +767,26 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... ChatClient"
 	@echo "... ChatServer"
+	@echo "... DatabaseTests"
 	@echo "... ProtocolTests"
 	@echo "... chat_client.o"
 	@echo "... chat_client.i"
 	@echo "... chat_client.s"
+	@echo "... chat_db.o"
+	@echo "... chat_db.i"
+	@echo "... chat_db.s"
 	@echo "... chat_server.o"
 	@echo "... chat_server.i"
 	@echo "... chat_server.s"
 	@echo "... protocol.o"
 	@echo "... protocol.i"
 	@echo "... protocol.s"
+	@echo "... sha256.o"
+	@echo "... sha256.i"
+	@echo "... sha256.s"
+	@echo "... tests/database_tests.o"
+	@echo "... tests/database_tests.i"
+	@echo "... tests/database_tests.s"
 	@echo "... tests/protocol_tests.o"
 	@echo "... tests/protocol_tests.i"
 	@echo "... tests/protocol_tests.s"

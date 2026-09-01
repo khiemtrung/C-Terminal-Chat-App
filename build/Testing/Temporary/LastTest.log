@@ -1,19 +1,41 @@
-Start testing: Sep 01 15:42 +07
+Start testing: Sep 01 17:23 +07
 ----------------------------------------------------------
-1/1 Testing: ProtocolTests
-1/1 Test: ProtocolTests
+1/2 Testing: ProtocolTests
+1/2 Test: ProtocolTests
 Command: "/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/ProtocolTests"
 Directory: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build
-"ProtocolTests" start time: Sep 01 15:42 +07
+"ProtocolTests" start time: Sep 01 17:23 +07
 Output:
 ----------------------------------------------------------
-Protocol tests passed.
+SHA-256 vectors OK.
+Typed message encode/decode OK.
+ChatMessage binary roundtrip OK.
+History binary roundtrip OK.
+DirectMessage binary roundtrip OK.
+User list binary roundtrip OK.
+All protocol tests passed.
 <end of output>
-Test time =   0.70 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"ProtocolTests" end time: Sep 01 15:42 +07
+"ProtocolTests" end time: Sep 01 17:23 +07
 "ProtocolTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 01 15:42 +07
+2/2 Testing: DatabaseTests
+2/2 Test: DatabaseTests
+Command: "/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/DatabaseTests"
+Directory: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build
+"DatabaseTests" start time: Sep 01 17:23 +07
+Output:
+----------------------------------------------------------
+All database tests passed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTests" end time: Sep 01 17:23 +07
+"DatabaseTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 01 17:23 +07

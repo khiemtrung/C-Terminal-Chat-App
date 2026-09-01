@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address,undefined -g -O0 -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address,undefined CMakeFiles/ChatClient.dir/chat_client.cpp.o CMakeFiles/ChatClient.dir/protocol.cpp.o -o ChatClient

@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ProtocolTests.dir/tests/protocol_tests.cpp.o CMakeFiles/ProtocolTests.dir/protocol.cpp.o -o ProtocolTests
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ProtocolTests.dir/tests/protocol_tests.cpp.o CMakeFiles/ProtocolTests.dir/protocol.cpp.o CMakeFiles/ProtocolTests.dir/sha256.cpp.o -o ProtocolTests

@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ChatServer.dir/chat_server.cpp.o CMakeFiles/ChatServer.dir/protocol.cpp.o -o ChatServer
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ChatServer.dir/chat_server.cpp.o CMakeFiles/ChatServer.dir/chat_db.cpp.o CMakeFiles/ChatServer.dir/protocol.cpp.o CMakeFiles/ChatServer.dir/sha256.cpp.o -o ChatServer  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd

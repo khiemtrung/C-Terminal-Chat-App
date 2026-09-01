@@ -86,10 +86,24 @@ CMakeFiles/ChatServer.dir/chat_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/chat_server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/chat_server.cpp -o CMakeFiles/ChatServer.dir/chat_server.cpp.s
 
+CMakeFiles/ChatServer.dir/chat_db.cpp.o: CMakeFiles/ChatServer.dir/flags.make
+CMakeFiles/ChatServer.dir/chat_db.cpp.o: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/chat_db.cpp
+CMakeFiles/ChatServer.dir/chat_db.cpp.o: CMakeFiles/ChatServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ChatServer.dir/chat_db.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ChatServer.dir/chat_db.cpp.o -MF CMakeFiles/ChatServer.dir/chat_db.cpp.o.d -o CMakeFiles/ChatServer.dir/chat_db.cpp.o -c /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/chat_db.cpp
+
+CMakeFiles/ChatServer.dir/chat_db.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ChatServer.dir/chat_db.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/chat_db.cpp > CMakeFiles/ChatServer.dir/chat_db.cpp.i
+
+CMakeFiles/ChatServer.dir/chat_db.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/chat_db.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/chat_db.cpp -o CMakeFiles/ChatServer.dir/chat_db.cpp.s
+
 CMakeFiles/ChatServer.dir/protocol.cpp.o: CMakeFiles/ChatServer.dir/flags.make
 CMakeFiles/ChatServer.dir/protocol.cpp.o: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/protocol.cpp
 CMakeFiles/ChatServer.dir/protocol.cpp.o: CMakeFiles/ChatServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ChatServer.dir/protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ChatServer.dir/protocol.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ChatServer.dir/protocol.cpp.o -MF CMakeFiles/ChatServer.dir/protocol.cpp.o.d -o CMakeFiles/ChatServer.dir/protocol.cpp.o -c /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/protocol.cpp
 
 CMakeFiles/ChatServer.dir/protocol.cpp.i: cmake_force
@@ -100,19 +114,38 @@ CMakeFiles/ChatServer.dir/protocol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/protocol.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/protocol.cpp -o CMakeFiles/ChatServer.dir/protocol.cpp.s
 
+CMakeFiles/ChatServer.dir/sha256.cpp.o: CMakeFiles/ChatServer.dir/flags.make
+CMakeFiles/ChatServer.dir/sha256.cpp.o: /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/sha256.cpp
+CMakeFiles/ChatServer.dir/sha256.cpp.o: CMakeFiles/ChatServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ChatServer.dir/sha256.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ChatServer.dir/sha256.cpp.o -MF CMakeFiles/ChatServer.dir/sha256.cpp.o.d -o CMakeFiles/ChatServer.dir/sha256.cpp.o -c /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/sha256.cpp
+
+CMakeFiles/ChatServer.dir/sha256.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ChatServer.dir/sha256.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/sha256.cpp > CMakeFiles/ChatServer.dir/sha256.cpp.i
+
+CMakeFiles/ChatServer.dir/sha256.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/sha256.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/sha256.cpp -o CMakeFiles/ChatServer.dir/sha256.cpp.s
+
 # Object files for target ChatServer
 ChatServer_OBJECTS = \
 "CMakeFiles/ChatServer.dir/chat_server.cpp.o" \
-"CMakeFiles/ChatServer.dir/protocol.cpp.o"
+"CMakeFiles/ChatServer.dir/chat_db.cpp.o" \
+"CMakeFiles/ChatServer.dir/protocol.cpp.o" \
+"CMakeFiles/ChatServer.dir/sha256.cpp.o"
 
 # External object files for target ChatServer
 ChatServer_EXTERNAL_OBJECTS =
 
 ChatServer: CMakeFiles/ChatServer.dir/chat_server.cpp.o
+ChatServer: CMakeFiles/ChatServer.dir/chat_db.cpp.o
 ChatServer: CMakeFiles/ChatServer.dir/protocol.cpp.o
+ChatServer: CMakeFiles/ChatServer.dir/sha256.cpp.o
 ChatServer: CMakeFiles/ChatServer.dir/build.make
+ChatServer: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd
 ChatServer: CMakeFiles/ChatServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ChatServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ChatServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ChatServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

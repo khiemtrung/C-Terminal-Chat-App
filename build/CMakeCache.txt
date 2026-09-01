@@ -157,6 +157,21 @@ CMAKE_PROJECT_NAME:STATIC=ChatProject
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=2.0.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=2
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -261,6 +276,12 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Name of the computer/site where compile is being run
 SITE:STRING=Khiemsmm.local
+
+//Path to a file.
+SQLITE3_INCLUDE_DIR:PATH=/Library/Frameworks/Mono.framework/Headers
+
+//Path to a library.
+SQLITE3_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd
 
 
 ########################

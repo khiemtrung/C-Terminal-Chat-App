@@ -29,6 +29,7 @@
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/ChatServer.dir
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/ChatClient.dir
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/ProtocolTests.dir
+/Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/DatabaseTests.dir
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/test.dir
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/edit_cache.dir
 /Users/trungkhiem/Documents/workspaceCpp/C-Terminal-Chat-App/C-Terminal-Chat-App/build/CMakeFiles/rebuild_cache.dir
